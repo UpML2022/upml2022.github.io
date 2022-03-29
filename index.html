@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title>TPDP 2022 – Theory and Practice of Differential Privacy</title>
+  <title>UpML 2022 – Updatable Machine Learninig</title>
 
   <link href="style.css" type="text/css" rel='stylesheet'>
   <link rel='stylesheet' media='screen and (max-width: 750px)'
@@ -15,7 +15,7 @@
 <body>
 
 <div id="header">
-  <h1>TPDP 2022 - Theory and Practice of Differential Privacy</h1>
+  <h1>UpML 2022 – Updatable Machine Learninig</h1>
   <h2>Baltimore - 22 or 23 July 2022 - part of <a
   href="https://icml.cc/Conferences/2022/">ICML 2022</a>
   <br>
@@ -25,30 +25,20 @@
 <div class="content box"> <h2>Context</h2>
 
 <p>
-  Differential privacy is a promising approach to privacy-preserving data analysis.  Differential privacy provides strong worst-case guarantees about the harm that a user could suffer from participating in a differentially private data analysis, but is also flexible enough to allow for a wide variety of data analyses to be performed with a high degree of utility.  Having already been the subject of a decade of intense scientific study, it has also now been deployed at government agencies such as the U.S. Census Bureau and companies including Apple, Google, Facebook, and Microsoft.
-</p>
+In modern ML domains, state-of-the-art performance is attained by highly overparameterized models that are expensive to train, costing weeks of time and millions of dollars. At the same time, after deploying the model, the learner may realize issues such as leakage of private data or vulnerability to adversarial examples. The learner may also wish to impose additional constraints post-deployment, for example, to ensure fairness for different subgroups. Retraining the model from scratch to incorporate additional desiderata would be expensive. As a consequence, one would instead prefer to <i>update</i> the model, which can yield significant savings of resources such as time, computation, and memory over retraining from scratch. Some instances of this principle in action include the emerging field of machine unlearning, and the celebrated paradigm of fine-tuning pretrained models. The goal of our workshop is to provide a platform to stimulate discussion about both the state-of-the-art in updatable ML and future challenges in the field. 
+</p>  
+
 <p>
-  Researchers in differential privacy span many distinct research communities, including algorithms, computer security, cryptography, databases, data mining, machine learning, statistics, programming languages, social sciences, and law.  This workshop will bring researchers from these communities together to discuss recent developments in both the theory and practice of differential privacy.
+  This workshop will bring together researchers from various ML communities to discuss recent theoretical and empirical developments in updatable machine learning.
 </p>
 
 <p>
 Specific topics of interest for the workshop include (but are not limited to):
 </p>
 <ul>
-<li>theory of differential privacy,</li>
-<li>differential privacy and security,</li>
-<li>privacy preserving machine learning,</li>
-<li>differential privacy and statistics,</li>
-<li>differential privacy and data analysis,</li>
-<li>trade-offs between privacy protection and analytic utility,</li>
-<li>differential privacy and surveys,</li>
-<li>programming languages for differential privacy,</li>
-<li>relaxations of the differential privacy definition,</li>
-<li>differential privacy vs other privacy notions and methods,</li>
-<li>experimental studies using differential privacy,</li>
-<li>differential privacy implementations,</li>
-<li>differential privacy and policy making,</li>
-<li>applications of differential privacy.</li>
+<li>Machine unlearning</li>
+<li>Robustness</li>
+<li>Fairness</li>
 </ul>
 
 </div>
@@ -57,7 +47,7 @@ Specific topics of interest for the workshop include (but are not limited to):
 <h2 id="submission">Submission</h2>
 
 <p>
-  The goal of TPDP is to stimulate the discussion on the relevance of differentially private data analyses in practice. For this reason, we seek contributions from different research areas of computer science and statistics.
+  The goal of UpML is to bring together researchers from various communities (theoretical and empirical) working on ideas related to post deployment modification of a trained model. For this reason, we seek contributions from different research areas of computer science and statistics.
 </p>
 
 <p>
@@ -73,10 +63,10 @@ Submissions are single-blind (non-anonymized), and there is no prescribed style 
   The workshop will not have formal proceedings and is not intended to preclude later publication at another venue.
 </p>
 
-<p>
+<!-- <p>
   Selected papers from the workshop will be invited to submit a full version of their work for publication in a <a href="https://journalprivacyconfidentiality.org/index.php/jpc/tpdp">special issue</a> of the <a href="https://journalprivacyconfidentiality.org/index.php/jpc">Journal of Privacy and Confidentiality</a>.
 </p>
-
+ -->
 <p>
   Call for Papers: TBD
 </p>
@@ -86,14 +76,43 @@ Submissions are single-blind (non-anonymized), and there is no prescribed style 
 <div class="side box">
 <h2>Invited Speakers</h2>
 <ul>
+
+    <li >
+  <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> <br>
+ Stanford University
+  </li>
+
+
   <li>
-    <a href="http://kunaltalwar.org/">Kunal Talwar</a> <br>
-    Apple
+    <a href="http://people.csail.mit.edu/shafi/">Shafi Goldwasser
+</a> <br>
+    Simons Institute / UC Berkeley
   </li>
-  <li >
-  <a href="https://www.ccs.neu.edu/home/lydiazak/">Lydia Zakynthinou</a> <br>
-  Northeastern University
+
+
+   <li >
+  <a href="https://zicokolter.com/">Zico Kolter </a> <br>
+Carnegie Mellon University
   </li>
+   
+
+  <li>
+    <a href="https://www.papernot.fr/">Nicolas Papernot
+</a> <br>
+    University of Toronto
+  </li>
+
+
+
+  <li>
+    <a href="https://www.cis.upenn.edu/~aaroth/">Aaron Roth</a> <br>
+    University of Pennsylvania
+  </li>
+
+
+
+
+
 </ul>
 </div>
 
@@ -102,9 +121,9 @@ Submissions are single-blind (non-anonymized), and there is no prescribed style 
   <h2>Important Dates</h2>
   <dl>
     <dt>Abstract Submission</dt>
-    <dd>TBD</dd>
+    <dd>Thursday, May 12, 2022</dd>
     <dt>Notification</dt>
-      <dd>TBD</dd>
+      <dd>Monday, June 13, 2022</dd>
     <dt>Workshop</dt>
     <dd>July 22 or 23, 2022</dd>
   </dl>
@@ -117,26 +136,46 @@ Submissions are single-blind (non-anonymized), and there is no prescribed style 
   <h2>Organizing and Program Committee</h2>
   <ul>
     <li class="pc">
-      <a href="https://audramarymcmillan.wixsite.com/mysite">Audra McMillan</a> (co-chair)<br>
-      Apple
+      <a href="https://www.cs.cornell.edu/~sekhari/">Ayush Sekhari</a> (co-chair)<br>
+      Cornell University
     </li>
     <li class="pc">
       <a href="http://www.gautamkamath.com/">Gautam Kamath</a> (co-chair)<br>
       University of Waterloo
     </li>
     <li class="pc">
+      <a href="https://people.ece.cornell.edu/acharya/">Jayadev Acharya</a> (co-chair)<br>
+      Cornell University
+    </li>
+ <br>
+    <li class="pc">
       More PC members forthcoming
     </li>
   </ul>
 </div>
+
+<div class="side box">
+  <h2>Contact</h2>
+
+<a href="mailto:upml2022workshop@gmail.com">upml2022workshop@gmail.com</a>
+
+  <br>
+  <br>
+
+</div>
+
 <div class="side box">
   <h2>Submission website</h2>
   <br>
   TBD
   <br>
+  <br>
+
+<!-- TPDP 2022 - Theory and Practice of Differential Privacy --> 
+
 <!--    Note the “open” features of OpenReview will not be used, and visibility of all submissions,
 reviews, and accepted papers will be restricted to the program committee (similar other systems
-like EasyChair, CMT, HotCRP, etc.). --!>
+like EasyChair, CMT, HotCRP, etc.). --! 
   <br>
   <br>
 </div>
